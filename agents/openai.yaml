@@ -1,0 +1,5 @@
+interface:
+  display_name: "X 内容与收益审核"
+  short_description: "发布前审核 X 规则及创作者收益风险并提供修改方案"
+  default_prompt: "Use $review-x-content to audit this draft for X policy and creator monetization risks, then suggest a safer revision."
+
