@@ -1,13 +1,13 @@
 ---
 name: review-x-content
-description: 审核即将发布到 X（原 Twitter）的推文、长文、帖子串、标题、配图说明和视频文案，分别判断其是否违反 X Rules、是否符合 X Creator Monetization Standards 与 Creator Revenue Sharing 要求，并提供风险分级、逐项依据和尽量保留原意的修改稿。Use when reviewing X/Twitter drafts before publication, checking platform-policy compliance, creator-revenue or monetization eligibility, sensitive-media labeling, AI/synthetic-media disclosure, spam/manipulation risk, or rewriting risky social content for safer publication.
+description: 审核即将发布到 X（原 Twitter）的推文、长文、帖子串、标题、配图说明和视频文案，分别判断其是否违反 X Rules、Creator Monetization Standards、Creator Revenue Sharing 与 Paid Partnerships Policy，并提供风险分级、披露要求和尽量保留原意的修改稿。Use when reviewing X/Twitter drafts before publication, checking platform-policy compliance, creator monetization, paid partnerships, sponsorship disclosure, gifted products, affiliate links or discount codes, brand ambassador content, sensitive-media labeling, AI disclosure, spam risk, or rewriting risky social content.
 ---
 
 # 审核 X 待发布内容
 
 ## 核心原则
 
-- 把“能否发布”和“能否变现”作为两个独立结论。允许留在平台上的内容仍可能不适合变现。
+- 把“能否发布”“能否变现”和“是否属于付费合作及披露是否合规”作为独立结论。允许发布的内容仍可能不能变现或不能用于付费合作。
 - 只做发布前风险评估，不保证 X 一定批准、推荐或付费；最终执行取决于上下文、账号历史、地区法律和 X 的裁量。
 - 保留作者的事实主张、立场和语气，只修改造成风险的最小范围。不要以合规为由无谓弱化合法批评、新闻报道或公共利益讨论。
 - 不把账号级资格与单篇内容合规混为一谈。缺少账号数据时列为“待确认”，不得猜测。
@@ -18,9 +18,10 @@ description: 审核即将发布到 X（原 Twitter）的推文、长文、帖子
 
 1. 完整文案、帖子串顺序、链接和话题标签。
 2. 随附图片、视频、音频或截图；无法查看时要求用户描述关键画面。
-3. 是否为广告、赞助、新闻报道、讽刺/模仿、成人内容或 AI/合成媒体。
-4. 目标受众/地区，以及是否参与 Creator Revenue Sharing、Subscriptions 或其他变现产品。
-5. 账号资格信息仅在用户要求审核收益资格时收集。
+3. 是否为广告、赞助、赠品体验、联盟链接、折扣码、品牌大使内容、新闻报道、讽刺/模仿、成人内容或 AI/合成媒体。
+4. 是否获得或预计获得金钱、免费产品/服务、实物利益、销售佣金或其他激励；涉及哪个第三方品牌。
+5. 创作者及主要目标受众所在国家/地区，以及是否参与 Creator Revenue Sharing、Subscriptions 或其他变现产品。
+6. 账号资格信息仅在用户要求审核收益资格时收集。
 
 若信息不全，继续审核可见内容，并明确列出哪些结论是条件性的。
 
@@ -75,12 +76,30 @@ description: 审核即将发布到 X（原 Twitter）的推文、长文、帖子
 - `受限/可能降收益`：属于受限类别，即使平台允许发布也可能限制变现或推荐。
 - `内容层面低风险`：未发现明显变现限制；账号资格仍需另行确认。
 
-### 4. 给出可执行修改
+### 4. 审核付费合作
+
+当内容提及、推荐或展示产品/服务时，读取 `references/paid-partnerships.md` 并核查：
+
+- 是否因金钱、赠品、实物报酬、联盟销售佣金、折扣码或商业/品牌大使协议而推广第三方产品或服务。若是，按 Paid Partnership 处理。
+- 自然发布的付费合作帖是否计划在 Content Disclosure 设置中开启 “Paid Partnership” 开关。仅写 `#ad`、`广告` 或口头声明不能替代 X 要求的开关。
+- 产品、服务或 CTA 是否在帖子本身清楚呈现，避免必须点击额外链接才能知道在推广什么。
+- 行业是否被全球规则禁止用于 Paid Partnership，以及创作者或目标市场是否触发澳大利亚、欧盟、英国的地区规则。
+- 是否还需满足当地广告、代言和消费者保护法律。只标记需专业核验，不作确定法律结论。
+
+给出付费合作结论：
+
+- `不适用`：没有发现第三方补偿、激励、佣金或商业协议。
+- `需披露`：属于付费合作，行业未发现明显禁限，但必须开启 X 的 Paid Partnership 披露并完成列出的操作。
+- `不符合/高风险`：属于禁止行业、缺少必要披露，或帖子本身未清楚展示推广对象/CTA。
+- `待确认`：无法判断是否存在补偿、商业关系、目标地区或行业属性；列出需要用户确认的问题。
+
+### 5. 给出可执行修改
 
 - 按风险从高到低引用具体片段，并说明触发的政策类别、原因、置信度和修复方式。
 - 对事实性指控建议补充可靠来源、限定语和证据，不替用户捏造来源。
 - 对隐私信息做脱敏；对威胁、仇恨、骚扰或煽动内容移除针对性和行动号召。
 - 对敏感/成人/暴力或合成媒体说明应使用的 X 标签与文字披露；标签不能修复本身被禁止的内容。
+- 对付费合作明确说明是否应开启 X 的 Paid Partnership 开关、是否需补充文字披露，以及禁止行业问题是否无法通过改文案修复。
 - 同时提供“最小改动版”；用户要求时再给“更适合收益/推荐版”。
 - 不复述不必要的个人信息、极端仇恨词或儿童性剥削材料。用占位符指出删除位置。
 
@@ -92,6 +111,7 @@ description: 审核即将发布到 X（原 Twitter）的推文、长文、帖子
 ## 审核结论
 - X 平台规则：低风险 / 需修改或标注 / 高风险不建议发布
 - 创作者变现：内容层面低风险 / 受限或可能降收益 / 不符合或高风险
+- 付费合作：不适用 / 需披露 / 不符合或高风险 / 待确认
 - 置信度：高 / 中 / 低
 
 ## 发现的问题
@@ -102,7 +122,7 @@ description: 审核即将发布到 X（原 Twitter）的推文、长文、帖子
 [尽量保留原意的完整可发布版本]
 
 ## 发布前操作
-- [媒体标签、AI 披露、来源、链接、账号资格等待确认项]
+- [媒体标签、AI 披露、Paid Partnership 开关、商业关系、来源、链接、账号资格等待确认项]
 
 ## 官方依据
 - [当前核验过的官方政策名称、链接与核验日期]
